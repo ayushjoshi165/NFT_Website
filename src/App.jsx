@@ -1,16 +1,12 @@
-import react from 'react-dom';
-import React, {useState,useEffect} from 'react';
-import './App.css';
-import Header from  './Header';
-import logo from "./logo.png";
-import { Routes, Route } from "react-router-dom"
-import Story from "./Story"
-import Roadmap from './Roadmap';
-import Utilities from './Utilities';
-import AboutUS from './AboutUS';
-import Home from './Home';
-import Thankyou from './Thankyou';
-
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import Header from "./Header";
+import { Routes, Route } from "react-router-dom";
+import Story from "./Story";
+import Roadmap from "./Roadmap";
+import Utilities from "./Utilities";
+import AboutUS from "./AboutUS";
+import Home from "./Home";
 
 function App() {
   const [isLoading, setLoading] = useState(true);
@@ -19,7 +15,7 @@ function App() {
   }
   useEffect(() => {
     fakeRequest().then(() => {
-      const el = document.querySelector(".loader-container");
+      const el = document.querySelector(".loader");
       if (el) {
         el.remove();
         setLoading(!isLoading);
@@ -32,18 +28,14 @@ function App() {
   }
   return (
     <div className="App">
-
- <Header title="MyHeader" name ="Global Header"/>
- <Routes>
-        <Route path="/" element={ <Home/> } />
-        <Route path="story" element={ <Story/> } />
-        <Route path="Roadmap" element={ <Roadmap/> } />
-        <Route path="Utilities" element={ <Utilities/> } />
-        <Route path="AboutUS" element={ <AboutUS/> } />
-        <Route path="/thankyou" element={ <Thankyou/> } />
-        
+      <Header title="MyHeader" name="Global Header" />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="story" element={<Story />} />
+        <Route path="Roadmap" element={<Roadmap />} />
+        <Route path="Utilities" element={<Utilities />} />
+        <Route path="AboutUS" element={<AboutUS />} />
       </Routes>
- 
     </div>
   );
 }

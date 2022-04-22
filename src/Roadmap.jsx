@@ -1,19 +1,11 @@
 import React from 'react'
-import Accordian from './Accordian';
-import {data} from './utils/roadmapData'
+
 export default function Roadmap() {
 
  
   return (
     <div className="roadmap-container">
-      {/* <div>
-      
-      <div className="accordion">
-        {data.map(({ title, content }) => (
-          <Accordian title={title} content={content} key={title}/>
-        ))}
-      </div>
-    </div> */}
+    
 
 <div className="timeline">
   <div className="container left">

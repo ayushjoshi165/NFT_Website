@@ -1,15 +1,15 @@
 export const data = [
-    {
-      title: 'Phase 1',
-      content: `Phase one:
+  {
+    title: "Phase 1",
+    content: `Phase one:
       Trading, staking and tokens (BioCoins)
       
       Majority of funds reinvested back into utility development and installing our first solar Farm (prototype). 
       `
-    },
-    {
-      title: 'Phase 2',
-      content: `Phase two:  
+  },
+  {
+    title: "Phase 2",
+    content: `Phase two:  
 
       Educational platform: An interactive academy to help fuel knowledge and wisdom from experts to educate students about the benefits of web3.
       
@@ -21,13 +21,13 @@ export const data = [
       
       Access to live events ( crypto events/ concerts) 
       `
-    },
-    {
-      title: 'Phase 3',
-      content: `Phase 3 (aspirational, DAO)
+  },
+  {
+    title: "Phase 3",
+    content: `Phase 3 (aspirational, DAO)
       (Mint solar pass) - Raising capital public/ private mint  
       Installing solar farms and earning dividends on monthly basis
       Promote sustainable energy and continue installing more solar farms (DAO) 
       `
-    }
-  ];
+  }
+];
